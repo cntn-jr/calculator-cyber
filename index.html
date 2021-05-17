@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>電卓</title>
+  </head>
+  <body>
+    <div class="container col-8 my-5">
+        <div class="row alert alert-primary" id='process-table'></div>
+        <div class="row alert alert-dark" id='result'>0</div>
+        <div class='buttons m-auto'>
+            <div class="row">
+                <button class='btn btn-info' id='clear'>C</button>
+                <button class='btn btn-light' id='reverse'>±</button>
+                <button class='btn btn-light' id='percent'>%</button>
+                <button class='btn btn-light' id='divide'>÷</button>
+            </div>
+            <div class="row">
+                <button class='btn btn-dark' id='seven'>7</button>
+                <button class='btn btn-dark' id='eight'>8</button>
+                <button class='btn btn-dark' id='nine'>9</button>
+                <button class='btn btn-light' id='multiply'>×</button>
+            </div>
+            <div class="row">
+                <button class='btn btn-dark' id='four'>4</button>
+                <button class='btn btn-dark' id='five'>5</button>
+                <button class='btn btn-dark' id='six'>6</button>
+                <button class='btn btn-light' id='minus'>-</button>
+            </div>
+            <div class="row">
+                <button class='btn btn-dark' id='one'>1</button>
+                <button class='btn btn-dark' id='two'>2</button>
+                <button class='btn btn-dark' id='three'>3</button>
+                <button class='btn btn-light' id='plus'>+</button>
+            </div>
+            <div class="row">
+                <button class='btn btn-dark' id='zero'>0</button>
+                <button class='btn btn-dark' id='double-zero'>00</button>
+                <button class='btn btn-secondary' id='equal'>=</button>
+            </div>
+        </div>
+        <div class='mt-5 alert alert-success' id=''>
+            <h4 class="alert-hedding">オリジナリティについて</h4>
+            <hr>
+            <ul>
+                <li>±ボタンを押すことで数字の正負を逆にするようにしました</li>
+                <li>％ボタンを押すことで1/100にできるようにしました</li>
+                <li>四則演算のボタンを押したときに直前に押下したボタンをわかりやすく色付けするようにしました</li>
+                <li>計算の過程を出力するようにしました</li>
+                <li>Cボタンを押すことで、計算をリセットできるようにしました</li>
+                <li>００ボタンを押すことで１００倍できるようにしました</li>
+            </ul>
+        </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>

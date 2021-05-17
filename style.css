@@ -1,0 +1,19 @@
+/* .result{
+    height: 50px;
+} */
+
+button{
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+}
+
+.row{
+    width: 218px;
+    margin: auto;
+    height: 54px;
+}
+
+#zero{
+    width: 104px;
+}
